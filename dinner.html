@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="dinnerstyle.css">
+
+    <script>
+    function myFunction() {
+    var myDinner = ["Chinese", "Thai", "Mexican", "Pizza", "Burgers", "Salad", "Peruvian", "Korean", "Japanese", "Steak", "Seafood"]
+	var random = myDinner[Math.floor(Math.random() * myDinner.length)];
+	document.getElementById("demo").innerHTML=random;
+}
+    </script>
+  </head>
+
+<body>
+  <div class="jumbotron">
+    <h1 id="demo">Can't Decide on Dinner Tonight?</h1>
+    <button type="button" onclick="myFunction()">Pick my Dinner</button>
+  </div>
+</body>
+</html>
